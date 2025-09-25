@@ -1,2 +1,2 @@
 # datn-nhom6
-web-ban-dien-thoai
+web-ban-laptop
