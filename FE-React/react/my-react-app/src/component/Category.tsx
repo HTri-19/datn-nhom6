@@ -6,6 +6,8 @@ import zalo from "../assets/images/zalo.png";
 import facebook from "../assets/images/facebook.png";
 import tiktok from "../assets/images/tiktok.png";
 import banner1 from "../assets/images/banner-1.png";
+import payment from "../assets/images/visa.png";
+
 // import banner2 from "../assets/images/banner-2.png";
 // import banner3 from "../assets/images/banner-3.png";
 import laptopdell from "../assets/images/dell-lapptop.png";
@@ -126,7 +128,14 @@ const Category = () => {
         </section>
 
         {/* Nút xem thêm */}
-        <div className="cart-buttons" style={{ marginBottom: "20px" }}>
+        <div
+          className="cart-buttons"
+          style={{
+            margin: "0 auto 20px",
+            maxWidth: "285px",
+            textAlign: "center",
+          }}
+        >
           <button className="btn btn-primary">Xem thêm 200 sản phẩm</button>
         </div>
       </div>
@@ -189,7 +198,7 @@ const Category = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
-              <img src="/images/visa.png" alt="Visa" />
+              <img src={payment} alt="Visa" />
             </div>
 
             <h3>Đơn vị vận chuyển</h3>

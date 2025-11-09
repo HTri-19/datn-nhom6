@@ -1,6 +1,7 @@
 import Frame65 from "../assets/images/Frame 65.png";
 import vanchuyen from "../assets/images/vanchuyen.png";
 import bocongthuong from "../assets/images/bocongthuong.png";
+import payment from "../assets/images/visa.png";
 import dmca from "../assets/images/dmca.png";
 import zalo from "../assets/images/zalo.png";
 import facebook from "../assets/images/facebook.png";
@@ -607,7 +608,7 @@ const Home = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
-              <img src="/images/visa.png" alt="Visa" />
+              <img src={payment} alt="Visa" />
             </div>
 
             <h3>Đơn vị vận chuyển</h3>

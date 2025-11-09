@@ -1,13 +1,9 @@
-import "./App.css";
-import "./assets/form.css";
-import "./assets/product.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./component/Home";
 import Login from "./component/Login";
 import Register from "./component/Register";
 import Cart from "./component/Cart";
 import Checkcart from "./component/Checkcart";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import Productdetail from "./component/Productdetail";
 import Category from "./component/Category";
 

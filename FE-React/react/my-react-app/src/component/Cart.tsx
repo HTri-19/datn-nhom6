@@ -1,6 +1,7 @@
 import Frame65 from "../assets/images/Frame 65.png";
 import vanchuyen from "../assets/images/vanchuyen.png";
 import bocongthuong from "../assets/images/bocongthuong.png";
+import payment from "../assets/images/visa.png";
 import dmca from "../assets/images/dmca.png";
 import zalo from "../assets/images/zalo.png";
 import facebook from "../assets/images/facebook.png";
@@ -9,7 +10,7 @@ import youtube from "../assets/images/youtub.png";
 import mac1 from "../assets/images/mac-1.png";
 import laptop1 from "../assets/images/laptop-seller-1.png";
 import { Link } from "react-router-dom";
-import banner3 from "../assets/images/banner-3.png";
+// import banner3 from "../assets/images/banner-3.png";
 const Cart = () => {
   return (
     <>
@@ -138,11 +139,6 @@ const Cart = () => {
           </div>
         </div>
       </section>
-      <section className="banner">
-        <div className="container">
-          <img src={banner3} alt="Banner" />
-        </div>
-      </section>
 
       {/* FOOTER */}
       <footer className="footer">
@@ -203,7 +199,7 @@ const Cart = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
-              <img src="/images/visa.png" alt="Visa" />
+              <img src={payment} alt="Visa" />
             </div>
 
             <h3>Đơn vị vận chuyển</h3>

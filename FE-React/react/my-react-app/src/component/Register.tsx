@@ -7,6 +7,7 @@ import facebook from "../assets/images/facebook.png";
 import tiktok from "../assets/images/tiktok.png";
 import youtube from "../assets/images/youtub.png";
 import google from "../assets/images/google.png";
+import payment from "../assets/images/visa.png";
 
 import { Link } from "react-router-dom";
 const Register = () => {
@@ -136,7 +137,7 @@ const Register = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
-              <img src="/images/visa.png" alt="Visa" />
+              <img src={payment} alt="Visa" />
             </div>
 
             <h3>Đơn vị vận chuyển</h3>
