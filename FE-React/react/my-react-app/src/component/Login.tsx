@@ -37,9 +37,9 @@ const Login = () => {
           </div>
 
           <div className="header-actions">
-            <a href="cart.html" className="cart-btn">
+            <Link to="/Cart" className="cart-btn">
               <i className="fa-solid fa-cart-shopping"></i> Giỏ hàng
-            </a>
+            </Link>
 
             <Link to="/Login" className="login-btn">
               <i className="fa-regular fa-user"></i> Đăng nhập
