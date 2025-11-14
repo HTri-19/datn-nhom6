@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin đặt hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html"><img src="images/Frame 65.png" alt="T&T Center"></a>
+            </div>
+
+            <nav class="header-nav">
+                <a href="#" class="menu-btn"><i class="fa-solid fa-bars"></i> Danh mục</a>
+                <a href="#" class="location-btn"><i class="fa-solid fa-location-dot"></i> Xem giá tại Hà Nội</a>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" placeholder="Nhập tên sản phẩm cần tìm...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="header-actions">
+                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+                <a href="login.html" class="login-btn"><i class="fa-regular fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="order-section">
+        <div class="container-tt">
+            <button class="back-btn"><a href="cart.html" class="return">← Quay lại</a></button>
+              <h2>🛒 Thông tin đặt hàng</h2>
+
+            <div class="progress-bar mt-5">
+                <div class="step ">Chọn sản phẩm</div>
+                <div class="step active">Thông tin đặt hàng</div>
+                <div class="step">Hoàn tất đặt hàng</div>
+            </div>
+
+            <form class="order-form">
+                <h3>Thông tin khách hàng</h3>
+                <input type="text" placeholder="Họ và tên *" required>
+                <input type="tel" placeholder="Số điện thoại *" required>
+                <input type="email" placeholder="Email *" required>
+
+                <h3>Chọn cách thức giao hàng</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="delivery" checked> Nhận tại cửa hàng</label>
+                    <label><input type="radio" name="delivery"> Giao hàng tận nơi</label>
+                </div>
+
+                <select>
+                    <option>Chọn địa chỉ cửa hàng để nhận</option>
+                    <option>Chi nhánh 1 - Quận 1</option>
+                    <option>Chi nhánh 2 - Quận 7</option>
+                </select>
+
+                <textarea placeholder="Yêu cầu khác..."></textarea>
+
+                <h3>Hình thức thanh toán</h3>
+                <div class="payment">
+                    <div class="payment-box active">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1042/1042339.png" alt="">
+                        <p>Thanh toán tại cửa hàng</p>
+                    </div>
+                    <div class="payment-box">
+                        <img src="https://cdn-icons-png.flaticon.com/512/764/764600.png" alt="">
+                        <p>Thanh toán khi nhận hàng</p>
+                    </div>
+                </div>
+
+                 <div class="cart-buttons">
+                    <button class="btn-primary">Xác nhận đơn hàng</button>
+                </div>
+            </form>
+        </div>
+    </section>
+     <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Về T&T Center</h3>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách bán hàng</a></li>
+                    <li><a href="#">Chính sách kiểm hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Thông tin</h3>
+                <ul>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Hướng dẫn đặt hàng Online</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Tổng đài hỗ trợ và bảo hành</h3>
+                <p>Hotline: <strong>0898.143.789</strong></p>
+                <p>Email: <a href="mailto:ttcentersale@gmail.com">ttcentersale@gmail.com</a></p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Phương thức thanh toán</h3>
+                <div class="payment-icons">
+                    <img src="images/visa.png" alt="Visa">
+                    <!-- <img src="mastercard.png" alt="Mastercard">
+                    <img src="jcb.png" alt="JCB">
+                    <img src="bank.png" alt="Bank">
+                    <img src="installment.png" alt="Installment"> -->
+                </div>
+
+                <h3>Đơn vị vận chuyển</h3>
+                <div class="shipping-icons">
+                    <img src="images/vanchuyen.png" alt="GHN">
+                    <!-- <img src="ems.png" alt="EMS">
+                    <img src="giao-hang-nhanh.png" alt="GHN">
+                    <img src="viettel-post.png" alt="Viettel"> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social">
+                <p>Liên kết mạng xã hội</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images//tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="images/youtub.png" alt="YouTube"></a>
+                    <a href="#"><img src="images/zalo.png" alt="Zalo"></a>
+                </div>
+            </div>
+            <div class="certificates">
+                <img src="images/bocongthuong.png" alt="Bộ Công Thương">
+                <img src="images/dmca.png" alt="DMCA">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
