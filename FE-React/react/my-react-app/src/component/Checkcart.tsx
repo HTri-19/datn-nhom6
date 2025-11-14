@@ -1,13 +1,21 @@
 import Frame65 from "../assets/images/Frame 65.png";
 import vanchuyen from "../assets/images/vanchuyen.png";
 import bocongthuong from "../assets/images/bocongthuong.png";
+<<<<<<< HEAD
+=======
+import payment from "../assets/images/visa.png";
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 import dmca from "../assets/images/dmca.png";
 import zalo from "../assets/images/zalo.png";
 import facebook from "../assets/images/facebook.png";
 import tiktok from "../assets/images/tiktok.png";
 import youtube from "../assets/images/youtub.png";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import "@fortawesome/fontawesome-free/css/all.min.css";
+=======
+
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 const Checkcart = () => {
   return (
     <>
@@ -173,7 +181,11 @@ const Checkcart = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
+<<<<<<< HEAD
               <img src="/images/visa.png" alt="Visa" />
+=======
+              <img src={payment} alt="Visa" />
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
             </div>
 
             <h3>Đơn vị vận chuyển</h3>

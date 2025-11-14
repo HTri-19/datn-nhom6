@@ -3,9 +3,12 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserController;
+<<<<<<< HEAD
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ProductController;
 
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,6 +30,7 @@ Route::prefix('users')->group(function () {
     Route::put('/{id}', [UserController::class, 'update']);
     Route::delete('/{id}', [UserController::class, 'destroy']);
 });
+<<<<<<< HEAD
 // 🔹 Auth Routes
 Route::prefix('auth')->group(function () {
     Route::post('/register', [AuthController::class, 'register']);
@@ -43,3 +47,5 @@ Route::prefix('product')->group(function () {
     Route::put('/{id}', [ProductController::class, 'update']);
     Route::delete('/{id}', [ProductController::class, 'destroy']);
 });
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850

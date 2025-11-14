@@ -712,12 +712,44 @@ a{
 }
 
 .delete-btn {
+<<<<<<< HEAD
   background: none;
   border: none;
   font-size: 25px;
   cursor: pointer;
   color: #777;
   margin-top: -30%;
+=======
+  background-color: #f8f9fb; /* Nền nhạt để nổi icon */
+  border: 1px solid #ddd;
+  color: #2b63b9; /* Đồng bộ màu chủ đạo */
+  border-radius: 50%; /* Bo tròn nút */
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: auto; /* Đẩy sang phải nếu đặt trong flex */
+}
+
+.delete-btn:hover {
+  background-color: #2b63b9;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.cart-item {
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 }
 
 /* Cart Summary */
@@ -759,6 +791,7 @@ a{
 .cart-buttons {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   gap: 10px;
   margin-top: 20px;
 }
@@ -784,6 +817,45 @@ a{
   color: #333;
 }
 
+=======
+  align-items: center; /* căn giữa nút theo chiều ngang */
+  justify-content: center;
+  gap: 12px; /* khoảng cách giữa hai nút */
+  margin-top: 20px;
+}
+
+.cart-buttons button {
+  width: 400px; /* ✅ đặt chiều rộng cố định */
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Nút chính */
+.btn-primary {
+  background: #2b63b9;
+  color: #fff;
+}
+
+/* Nút phụ */
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background-color: #1f4f97;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 /* Responsive */
 @media (max-width: 600px) {
   .cart-item {
@@ -798,10 +870,13 @@ a{
   .discount {
     flex-direction: column;
   }
+<<<<<<< HEAD
 
   .cart-buttons {
     flex-direction: column;
   }
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 }
 
 .section-body {
@@ -925,6 +1000,7 @@ a{
 .news-item:hover h4 {
   color: #4db8ff;
 }
+<<<<<<< HEAD
 
 
 
@@ -1079,3 +1155,5 @@ a{
 .search-dropdown li:hover {
   background-color: #f2f2f2;
 }
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850

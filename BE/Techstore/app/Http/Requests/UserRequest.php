@@ -25,10 +25,18 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:100',
+<<<<<<< HEAD
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:6',
             'phone' => 'nullable|string|max:50',
             'role' => 'in:user,admin',
+=======
+            'email' => 'required|email|unique:users,email,' . $this->id,
+            'password' => $this->isMethod('post') ? 'required|min:6' : 'nullable|min:6',
+            'phone' => 'nullable|string|max:50',
+            'role' => 'in:user,admin',
+            'register_date' => 'required|date',
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
             'status' => 'in:active,unactive',
         ];
     }

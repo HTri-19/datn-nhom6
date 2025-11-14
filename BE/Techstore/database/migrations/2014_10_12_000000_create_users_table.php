@@ -20,7 +20,11 @@ return new class extends Migration
             $table->string('password', 255);
             $table->string('phone', 50)->nullable();
             $table->enum('role', ['user', 'admin'])->default('user');
+<<<<<<< HEAD
             $table->dateTime('register_date')->useCurrent();
+=======
+            $table->dateTime('register_date');
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
             $table->enum('status', ['active', 'unactive'])->default('active');
             $table->timestamps(); // tạo created_at và updated_at tự động
         });

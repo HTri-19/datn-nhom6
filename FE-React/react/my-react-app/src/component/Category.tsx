@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import React, { useState, useEffect} from "react";
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 import Frame65 from "../assets/images/Frame 65.png";
 import vanchuyen from "../assets/images/vanchuyen.png";
 import bocongthuong from "../assets/images/bocongthuong.png";
@@ -6,6 +9,7 @@ import dmca from "../assets/images/dmca.png";
 import zalo from "../assets/images/zalo.png";
 import facebook from "../assets/images/facebook.png";
 import tiktok from "../assets/images/tiktok.png";
+<<<<<<< HEAD
 import youtube from "../assets/images/youtub.png";
 import banner1 from "../assets/images/banner-1.png";
 import lap1 from "../assets/images/lap-1.png";
@@ -92,6 +96,18 @@ const Category = () => {
     // Trong React, việc này thường không cần thiết
     console.log("Tìm kiếm đã được thực hiện với từ khóa:", searchQuery);
   };
+=======
+import banner1 from "../assets/images/banner-1.png";
+import payment from "../assets/images/visa.png";
+
+// import banner2 from "../assets/images/banner-2.png";
+// import banner3 from "../assets/images/banner-3.png";
+import laptopdell from "../assets/images/dell-lapptop.png";
+import youtube from "../assets/images/youtub.png";
+
+import { Link } from "react-router-dom";
+const Category = () => {
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
   return (
     <>
       <header className="main-header">
@@ -111,6 +127,7 @@ const Category = () => {
             </a>
           </nav>
 
+<<<<<<< HEAD
           {/* THANH TÌM KIẾM MỚI TRÊN TRANG CATEGORY */}
           <div className="search-box" style={{ position: "relative" }}>
             <input
@@ -125,6 +142,11 @@ const Category = () => {
               }}
             />
             <button onClick={handleSearchSubmit}>
+=======
+          <div className="search-box">
+            <input type="text" placeholder="Nhập tên sản phẩm cần tìm..." />
+            <button>
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
@@ -139,9 +161,12 @@ const Category = () => {
           </div>
         </div>
       </header>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
       {/* banner */}
       <section className="banner">
         <div className="slider">
@@ -159,7 +184,10 @@ const Category = () => {
         </div>
       </section>
       <div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
         {/* Bộ lọc */}
         <div className="filters">
           <select>
@@ -179,8 +207,11 @@ const Category = () => {
           </select>
         </div>
 
+<<<<<<< HEAD
         
 
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
         {/* Danh mục */}
         <div className="categories">
           <button>Văn phòng</button>
@@ -193,6 +224,7 @@ const Category = () => {
           <button>Pin trâu</button>
         </div>
 
+<<<<<<< HEAD
         <div className="container">
         {/* HIỂN THỊ KẾT QUẢ TÌM KIẾM / DANH MỤC */}
           <section className="product-results-section mt-5">
@@ -215,6 +247,8 @@ const Category = () => {
           </section>
       </div>
 
+=======
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
         {/* Danh sách sản phẩm */}
         <section className="product-category">
           <div className="container">
@@ -244,7 +278,18 @@ const Category = () => {
         </section>
 
         {/* Nút xem thêm */}
+<<<<<<< HEAD
         <div className="cart-buttons" style={{ marginBottom: "20px" }}>
+=======
+        <div
+          className="cart-buttons"
+          style={{
+            margin: "0 auto 20px",
+            maxWidth: "285px",
+            textAlign: "center",
+          }}
+        >
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
           <button className="btn btn-primary">Xem thêm 200 sản phẩm</button>
         </div>
       </div>
@@ -307,7 +352,11 @@ const Category = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
+<<<<<<< HEAD
               <img src="/images/visa.png" alt="Visa" />
+=======
+              <img src={payment} alt="Visa" />
+>>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
             </div>
 
             <h3>Đơn vị vận chuyển</h3>
