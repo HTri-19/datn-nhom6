@@ -712,12 +712,35 @@ a{
 }
 
 .delete-btn {
-  background: none;
-  border: none;
-  font-size: 25px;
+  background-color: #f8f9fb; /* Nền nhạt để nổi icon */
+  border: 1px solid #ddd;
+  color: #2b63b9; /* Đồng bộ màu chủ đạo */
+  border-radius: 50%; /* Bo tròn nút */
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  color: #777;
-  margin-top: -30%;
+  transition: all 0.3s ease;
+  margin-left: auto; /* Đẩy sang phải nếu đặt trong flex */
+}
+
+.delete-btn:hover {
+  background-color: #2b63b9;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.cart-item {
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10%;
+  right: 20px;
 }
 
 /* Cart Summary */
@@ -759,23 +782,62 @@ a{
 .cart-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center; /* căn giữa nút theo chiều ngang */
+  justify-content: center; /* căn giữa theo chiều dọc nếu cần */
+  gap: 12px; /* khoảng cách giữa các nút */
   margin-top: 20px;
+}
+
+.cart-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* căn giữa nút theo chiều ngang */
+  justify-content: center;
+  gap: 12px; /* khoảng cách giữa hai nút */
+  margin-top: 20px;
+}
+
+.cart-buttons button {
+  width: 400px; /* ✅ đặt chiều rộng cố định */
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary {
   background: #2b63b9;
   color: #fff;
-  border: none;
-  padding: 12px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: bold;
 }
 
 .btn-secondary {
-  background: #f0f0f0;
+  background: #a9a7a7;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background-color: #1f4f97;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-secondary {
+  background: #d6d4d4;
   border: none;
   padding: 12px;
   border-radius: 25px;

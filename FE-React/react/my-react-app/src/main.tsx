@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./admin/assets/css/dashboard.css";
 import "./App.css";
 import "./assets/form.css";
 import "./assets/product.css";
