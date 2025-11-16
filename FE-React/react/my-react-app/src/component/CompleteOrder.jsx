@@ -6,20 +6,14 @@ import zalo from "../assets/images/zalo.png";
 import facebook from "../assets/images/facebook.png";
 import tiktok from "../assets/images/tiktok.png";
 import youtube from "../assets/images/youtub.png";
-import { Link, useNavigate } from "react-router-dom"; // <--- THÊM useNavigate VÀO ĐÂY
+import { Link } from "react-router-dom";
+// Nếu bạn có ảnh thanh toán visa, bạn có thể thêm vào đây
+// import payment from "../assets/images/visa.png"; 
 
-const Checkcart = () => {
-    const navigate = useNavigate(); // <--- KHỞI TẠO useNavigate
-
-    // Hàm xử lý khi form được submit
-    const handleSubmit = (e) => {
-        e.preventDefault(); 
-        navigate('/complete-order'); 
-  };
-
+const CompleteOrder = () => {
   return (
     <>
-      {/* MAIN HEADER */}
+      {/* MAIN HEADER (Tái sử dụng) */}
       <header className="main-header">
         <div className="container header-inner">
           <Link to="/">
@@ -27,7 +21,6 @@ const Checkcart = () => {
               <img src={Frame65} alt="T&T Center" />
             </div>
           </Link>
-
           <nav className="header-nav">
             <a href="#" className="menu-btn">
               <i className="fa-solid fa-bars"></i> Danh mục
@@ -55,76 +48,42 @@ const Checkcart = () => {
         </div>
       </header>
 
-      <section className="order-section">
+      {/* NỘI DUNG CHÍNH: HOÀN TẤT ĐẶT HÀNG */}
+      <section className="complete-section">
         <div className="container-tt">
-          <button className="back-btn">
-            <Link to="/cart" className="return">
-              ← Quay lại
-            </Link>
-          </button>
-
-          <h2>🛒 Thông tin đặt hàng</h2>
-
+          {/* Progress Bar (Bước cuối) */}
           <div className="progress-bar mt-5">
             <div className="step">Chọn sản phẩm</div>
-            <div className="step active">Thông tin đặt hàng</div>
-            <div className="step">Hoàn tất đặt hàng</div>
+            <div className="step">Thông tin đặt hàng</div>
+            <div className="step active">Hoàn tất đặt hàng</div>
           </div>
 
-          <form className="order-form" onSubmit={handleSubmit}>
-            <h3>Thông tin khách hàng</h3>
-            <div className="input-group-inline"> {/* Thêm class này để nhóm inputs 1 hàng */}
-              <input type="text" placeholder="Họ và tên *" required />
-              <input type="tel" placeholder="Số điện thoại *" required />
-              <input type="email" placeholder="Email *" required />
-            </div>
-
-            <h3>Chọn cách thức giao hàng</h3>
-            <div className="radio-group-delivery"> {/* Đổi tên class để tránh trùng lặp nếu cần */}
-              <label className="radio-option">
-                <input type="radio" name="delivery" defaultChecked /> Nhận tại cửa hàng
-              </label>
-              <label className="radio-option">
-                <input type="radio" name="delivery" /> Giao hàng tận nơi
-              </label>
-            </div>
+          <div className="complete-content">
+            {/* Icon Checkmark lớn */}
+            <i className="fa-solid fa-circle-check check-icon"></i> 
+            <h2>Cảm ơn bạn đã đặt hàng tại T&T Center!</h2>
+            <p>
+              Đơn hàng của bạn **#TT000001** đã được ghi nhận thành công.
+            </p>
+            <p className="note">
+              Chúng tôi sẽ liên hệ với bạn trong vòng 30 phút để xác nhận lại thông tin giao hàng chi tiết. Vui lòng giữ liên lạc.
+            </p>
             
-            <select className="full-width-select">
-              <option>Chọn địa chỉ cửa hàng để nhận</option>
-              <option>Chi nhánh 1 - Quận 1</option>
-              <option>Chi nhánh 2 - Quận 7</option>
-            </select>
-
-            <textarea placeholder="Yêu cầu khác..." className="full-width-textarea"></textarea>
-
-            <h3>Hình thức thanh toán</h3>
-            <div className="payment-options-group">
-              <div className="payment-box active">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/1042/1042339.png"
-                  alt="Thanh toán tại cửa hàng"
-                />
-                <p>Thanh toán tại cửa hàng</p>
-              </div>
-              <div className="payment-box">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/764/764600.png"
-                  alt="Thanh toán khi nhận hàng"
-                />
-                <p>Thanh toán khi nhận hàng</p>
-              </div>
+            <div className="actions">
+                {/* Nút chính: Về trang chủ */}
+                <Link to="/" className="btn-primary complete-btn">
+                    VỀ TRANG CHỦ
+                </Link>
+                {/* Nút phụ: Tra cứu đơn hàng */}
+                <button className="btn-secondary complete-btn" onClick={() => alert("Chức năng tra cứu đơn hàng sẽ được phát triển sau.")}>
+                    TRA CỨU ĐƠN HÀNG
+                </button>
             </div>
-
-            <div className="cart-buttons">
-              <button className="btn-primary" type="submit">
-                Xác nhận đơn hàng
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </section>
 
-      {/* FOOTER */}
+      {/* FOOTER (Tái sử dụng) */}
       <footer className="footer">
         <div className="footer-top">
           <div className="footer-column">
@@ -216,4 +175,4 @@ const Checkcart = () => {
   );
 };
 
-export default Checkcart;
+export default CompleteOrder;

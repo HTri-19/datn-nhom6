@@ -9,10 +9,7 @@ import tiktok from "../assets/images/tiktok.png";
 import youtube from "../assets/images/youtub.png";
 import mac1 from "../assets/images/mac-1.png";
 import mac4 from "../assets/images/mac-4.png";
-<<<<<<< HEAD
-=======
 import payment from "../assets/images/visa.png";
->>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
 import listmac1 from "../assets/images/1690449389_1686_963918ca16d8561c0c042be5706d8581.png";
 import listmac2 from "../assets/images/1690449390_1686_7c1c6c85d8006d7104fd4d906da93ac1.png";
 import listmac3 from "../assets/images/1690449390_1686_7c1c6c85d8006d7104fd4d906da93ac1.png";
@@ -56,6 +53,7 @@ const Productdetail = () => {
           </div>
         </div>
       </header>
+
       <section className="body-NE">
         <div className="container-product">
           {/* LEFT */}
@@ -218,6 +216,7 @@ const Productdetail = () => {
           </section>
         </div>
       </section>
+
       {/* FOOTER */}
       <footer className="footer">
         <div className="footer-top">
@@ -277,11 +276,7 @@ const Productdetail = () => {
           <div className="footer-column">
             <h3>Phương thức thanh toán</h3>
             <div className="payment-icons">
-<<<<<<< HEAD
-              <img src="/images/visa.png" alt="Visa" />
-=======
               <img src={payment} alt="Visa" />
->>>>>>> 37a6b765b36580278b52e4f2d4a1ba3732d81850
             </div>
 
             <h3>Đơn vị vận chuyển</h3>

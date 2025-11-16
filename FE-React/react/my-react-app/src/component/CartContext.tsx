@@ -50,14 +50,12 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       const existingItem = prevItems.find(item => item.id === newItem.id);
 
       if (existingItem) {
-        // Nếu sản phẩm đã tồn tại, tăng số lượng lên 1
         return prevItems.map(item =>
           item.id === newItem.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
-        // Nếu chưa tồn tại, thêm mới với số lượng mặc định là 1
         return [...prevItems, { ...newItem, quantity: 1 }];
       }
     });
@@ -84,7 +82,9 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQuantity }}>
+    <CartContext.Provider
+      value={{ cartItems, addToCart, removeFromCart, updateQuantity }}
+    >
       {children}
     </CartContext.Provider>
   );
