@@ -3,7 +3,9 @@ const Dashboard = () => {
     <div className="layout">
       {/* MAIN AREA */}
       <div className="main">
-        <h2 className="page-title">Dashboard</h2>
+        <div className="page-header">
+          <h2>Dashboard</h2>
+        </div>
 
         {/* CARDS */}
         <div className="cards">
