@@ -36,7 +36,7 @@ const Ordermanager = () => {
               <th>STT</th>
               <th>Mã đơn hàng</th>
               <th>Khách hàng</th>
-              <th>Địa chỉ</th> {/* 👉 Thêm cột mới */}
+              <th>Địa chỉ</th>
               <th>Tổng tiền</th>
               <th>Ngày đặt</th>
               <th>Trạng thái</th>
